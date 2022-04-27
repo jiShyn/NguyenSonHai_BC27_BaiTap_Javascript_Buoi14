@@ -13,9 +13,9 @@
  */
 
 function count() {
-   var a = document.getElementById("num1").value;
-   var b = document.getElementById("num2").value;
-   var c = document.getElementById("num3").value;
+   var a = +document.getElementById("num1").value;
+   var b = +document.getElementById("num2").value;
+   var c = +document.getElementById("num3").value;
 
 	 var evenNum = 0;
 
@@ -23,7 +23,7 @@ function count() {
 
 	 if (a % 2 === 0) {
 		evenNum++
-	 }
+	 } 
 
 	 if (b % 2 === 0) {
 		 evenNum++

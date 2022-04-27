@@ -29,25 +29,25 @@ function arrange() {
    var c = +document.getElementById("num3").value;
    var res = document.getElementById("res");
 
-    if (a > b) {
-       if (c > a) {
-          res.innerHTML = b + " < " + a + " < " + c;
-       } else {
-          if (c > b) {
-             res.innerHTML = b + " < " + c + " < " + a;
-          } else {
-             res.innerHTML = c + " < " + b + " < " + a;
-          }
-       }
-    } else {
-       if (c > b) {
-          res.innerHTML = a + " < " + b + " < " + c;
-       } else {
-          if (c > a) {
-             res.innerHTML = a + " < " + c + " < " + b;
-          } else {
-             res.innerHTML = c + " < " + a + " < " + b;
-          }
-       }
-    }
+   if (a > b) {
+      if (c > a) {
+         res.innerHTML = b + " < " + a + " < " + c;
+      } else {
+         if (c > b) {
+            res.innerHTML = b + " < " + c + " < " + a;
+         } else {
+            res.innerHTML = c + " < " + b + " < " + a;
+         }
+      }
+   } else {
+      if (c > b) {
+         res.innerHTML = a + " < " + b + " < " + c;
+      } else {
+         if (c > a) {
+            res.innerHTML = a + " < " + c + " < " + b;
+         } else {
+            res.innerHTML = c + " < " + a + " < " + b;
+         }
+      }
+   }
 }
