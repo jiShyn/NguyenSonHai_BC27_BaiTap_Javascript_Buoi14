@@ -24,6 +24,7 @@
             <div class="col-auto">
                <input
                   type="number"
+                  id="triangle-edge-1"
                   class="border rounded px-3"
                   placeholder="Nhập độ dài cạnh 1"
                />
@@ -31,6 +32,7 @@
             <div class="col-auto">
                <input
                   type="number"
+                  id="triangle-edge-2"
                   class="border rounded px-3"
                   placeholder="Nhập độ dài cạnh 2"
                />
@@ -38,6 +40,7 @@
             <div class="col-auto">
                <input
                   type="number"
+                  id="triangle-edge-3"
                   class="border rounded px-3"
                   placeholder="Nhập độ dài cạnh 3"
                />
@@ -45,12 +48,12 @@
          </div>
 
          <div class="text-center my-3">
-            <button class="btn btn-primary px-3 rounded-pill">
-               Dự Đoán
-            </button>
+            <button class="btn btn-primary px-3 rounded-pill" onclick="predict()">Dự Đoán</button>
          </div>
 
-
+         <div class="text-center my-3">
+            <p id="res" class="rounded border bg-light fs-5">Kết quả</p>
+         </div>
       </div>
 
       <!-- Bootstrap JavaScript Libraries -->
